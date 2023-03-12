@@ -1,12 +1,12 @@
-# Buzzword Bingo Coding Challenge
+# 🎲 Buzzword Bingo Coding Challenge 🎲
 
 Welcome at _azeti_, and thank you very much for taking the time to participate in this
 challenge!
 
-In this repository, you will find the boilerplate code for a simple game. You task is the completion of the boilerplate code into a playable game.
+In this repository, you will find the boilerplate code for a game. Your task is the completion of the code into a
+playable game.
 
 We'll explain the game rules a bit below after some words of introduction.
-
 
 ## Logistics and Expectations
 
@@ -15,61 +15,61 @@ and therefore, we want to set clear expectations to ensure that your time is
 spent reasonably, and to avoid that, you waste or invest too much of it.
 Again we appreciate your participation.
 
-__How much time should I spend?__
+__How much time should I spend❓__
 
-_A reasonable amount of time is a couple of hours, if you are aware of the
+A reasonable amount of time is a couple of hours, if you are aware of the
 technologies, we guess you would be able to complete this in less than
-2 hours._
+2 hours.
 
-__How do we evaluate the results?__
+__How do we evaluate the results❓__
 
-_We will not grade or evaluate based on quantity but on quality. Apart from
+We will not grade or evaluate based on quantity but on quality. Apart from
 implementing the asked stuff, feel free to add any comments or remarks that
-you may find relevant._
+you may find relevant.
 
-__How can I submit my results?__
+__How can I submit my results❓__
 
-_First, copy this repository to your GitHub, GitLab, Bitbucket, or any other
+First, copy this repository to your GitHub, GitLab, Bitbucket, or any other
 git repository. Secondly, commit your code to it and share the link to your
-repository with us. Make sure we can read your repository. We will then review your code._
+repository with us. Make sure we can read your repository. We will then review your code.
 
-__How much time do I have to complete this challenge?__
+__How much time do I have to complete this challenge❓__
 
-_You will have a maximum of 1 week after receiving this challenge.
-Again, take the quality into consideration, don't rush!_
-
+You will have a maximum of _1 week_ after receiving this challenge.
+Again, take the quality into consideration, don't rush!
 
 ## Buzzword Bingo Game Rules
 
 We first describe the game from the user's point of view.
 
-The playing surface consists of 5 by 5 squares. All squares are filled with a word at the beginning of the game. No word appears twice on the board. All squares have colour#0.
+Buzzword Bingo shall be played by two or more players who participating in the same meeting.
 
-The player now attentively participates in a meeting. Whenever he hears a word that appears on his playing field, he may click on this square. The corresponding field changes its colour to colour#1.
+The playing surface consists of 5 by 5 squares. All squares are filled with a word at the beginning of the game. No word appears twice on the board. All squares have white color. All players run their own version of the app therefore each player will see a different board setup.
 
-As soon as the player has clicked all the squares in a column, all the squares in a row or all the squares in one of the two main diagonals, the colour of the squares concerned changes to colour#2.
-In this case, the player may shout "Bingo" loudly into the meeting.
+The player now attentively participates in a meeting. Whenever he hears a word that appears on his playing field, he clicks on this square. The corresponding field changes its colour to blue.
 
-If other players in the same meeting play the game, the player who shouts "Bingo" first wins.
+As soon as one player has clicked all the squares in a column, all the squares in a row or all the squares in one of the two main diagonals, the colour of the squares concerned changes to green.
+
+In this case, the player shall shout "Bingo" loudly into the meeting. He's the winner of the current round and the game ends here.
 
 ## How to implement the game?
 
 ### The Boilerplate code
 
-To keep the effort within limits, we have already created a basic framework.
-This boilerplate code was created using 
+We have already created a basic framework. This boilerplate code was created using
 
-    npx create-react-app
+    npx create-react-app buzzword-bingo-coding-challenge-fe
 
-and extended by including 
+    npm install @mui/material @emotion/react @emotion/styled
 
-    mui/material
+More information about the used frameworks can be found here:
 
-When you checkout this repo and run 
+https://create-react-app.dev/
+https://mui.com/material-ui/getting-started/overview/
+
+After checking out the code from the repo you can compile and run it like this:
 
     npm install
-
-and afterwards
 
     npm run
 
@@ -81,46 +81,38 @@ You should then see a basic playground like this:
 
 ![](docs/boilerplate.png)
 
-The boilerplate code already reacts to click events. That means if you click a square it will change the color from white to blue. But not more.
-
-⚠️ The please mind that the code already contains a dictionary in the file `Dictionary.js`.
+The code reacts to click events. Each square it will change the color from
+white to blue. But not more.
 
 ### What should you do?
 
-In short: __Extend the boilerplate code in a way that the game gets playable according to the given rules above.__
+Your mission, should you choose to accept it is the extension of the boilerplate code in a way that the game gets
+playable according to the given rules above.__
 
 You're free to change the boilerplate code to your needs!
 
+⚠️ Please mind that the code already contains a dictionary in the file `Dictionary.js` which is not yet referenced.
 
 ### Here are our acceptance criteria:
 
-* You should stick to the given base framework of Javascript, React and Material-UI.
+* You should stick to the given base framework of Javascript, React and Material-UI. Optional: Switch to Typescript.
 
 * The game must compile without errors and fully playable.
 
 * The given word list shall be used.
 
-* When the game is over ("Bingo" state), the buttons shall be no longer clickable.
-
 * You should add a button that can restart the game at any given time.
 
-### Here is what we don't expect:
+* When the game is over, the buttons shall be no longer clickable.
 
-* Don't write exhaustive documentation. But if extra knowledge is required to compile and start your code than please let us know.
+### Additional remarks
 
-* Don't waste your time on extensive comments in the code. Only comment if you think it's strictly requried.
+* Please document if extra knowledge is required to compile and start your code.
 
-* Effects, animations, sounds, graphics, CSS are all nice. But we don't want to steal your precious time. So please don't waste time on this.
+* Comment if you think it's strictly required. Commenting trivial stuff will not earn you more points.
 
-* And for sure no backend is expected.
+* We recommend to add one or two screenshots of your final version into the repo. 
 
-Don't hesitate to contact us in case of any questions!
+Don't hesitate to contact us in case of any questions or remarks!
 
-
-
-
-
-
-
-
-
+_Have fun!_
