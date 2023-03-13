@@ -11,7 +11,7 @@ class Board extends React.Component {
 
     handleClick(i) {
         const squares = this.state.squares.slice();
-        squares[i] =!squares[i]
+        squares[i] = !squares[i]
         this.setState({squares: squares});
     }
 
@@ -25,19 +25,18 @@ class Board extends React.Component {
     }
 
     render() {
-        let rows = []
-        for (let row = 0; row < 5; ++row) {
-
-            let columns= []
-            for (let col = 0; col < 5; ++col) {
-                columns.push(this.renderSquare(row * 5+col))
-            }
-            rows.push(
+        const size = 5
+        const rows = Array(size).fill(0).map((it, row) => {
+            const columns = Array(size).fill(0).map((it, col) =>
+                this.renderSquare(row * size + col)
+            )
+            return (
                 <div className="board-row">
                     {columns}
                 </div>
             )
-        }
+        })
+
         return (
             <div>
                 {rows}
