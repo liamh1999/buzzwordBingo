@@ -40,4 +40,5 @@
 .square {
   height: 14vh;
   width: 14vh;
+  Overflow-wrap: anywhere;
 }
