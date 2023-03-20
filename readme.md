@@ -71,7 +71,7 @@ After checking out the code from the repo you can compile and run it like this:
 
     npm install
 
-    npm run
+    npm run or npm start
 
 your browser should start up. If not, please goto
 
